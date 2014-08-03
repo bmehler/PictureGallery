@@ -1,0 +1,3 @@
+/* Importiert die einzelnen CSS-Dateien */
+@import "parts/login.css";
+@import "parts/registration.css";
