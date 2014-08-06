@@ -29,6 +29,10 @@ if(isset($_GET['page']) && $_GET['page'] == 'upload') {
     }else {
          include(WORKING_DIRECTORY. '/view/Registration/Template/registrateTemplate.inc.php');
     }
+}elseif(isset($_FILES['file'])) {
+    session_start();
+    $isUploaded =  include(WORKING_DIRECTORY. '/src/Upload/uploadPictures.inc.php');    
+    include(WORKING_DIRECTORY. '/view/Upload/Template/uploadTemplate.inc.php');
 }else { 
     include(WORKING_DIRECTORY. '/view/Login/Template/loginTemplate.inc.php');
 }

@@ -1,6 +1,6 @@
 <div id="content">
 	<?php if ($_SESSION['name']) { ?> 
-		<p>Sie sind angemeldet als: <a href="index.php?page=logout"><?php echo $_SESSION['name']; echo $_SESSION['id'] ?></a></p>
+		<p>Sie sind angemeldet als: <a href="index.php?page=logout"><?php echo $_SESSION['name'] ?></a></p>
         <p><a href="index.php?page=upload">Bilder uploaden</a></p>
         <div id="loggedin">
             <h1>Willkommen in der Picture Gallery!</h1>
