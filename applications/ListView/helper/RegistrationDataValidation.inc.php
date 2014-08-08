@@ -1,4 +1,4 @@
-<?
+<?php
 
 $inserted = array();
 $inserted['error'] = false;
@@ -14,7 +14,7 @@ if($isAlreadyRegistered) {
     return $inserted;
 } else {
     createUser($email, $password);
-    $inserted['message'] = 'Sie sind nun registriert! <a href="index.php">Jetzt einloggen</a>';
+    $inserted['message'] = 'Sie sind nun registriert! <a href="index.php?page=login">Jetzt einloggen</a>';
     return $inserted;
 }
 ?>
